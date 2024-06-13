@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.2);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    }
+    
+
+.navbar a {
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #DC5F00;
+}
+
+.card {
+    margin: 2rem 10rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #DC5F00;
+    background-color: #ffffff;
+}
+
+.card-select {
+    max-width: 20%;
+    width: 20%;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form .card {
+    display: flex;
+    flex-direction: column;
+}
+
+.form .card input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #DC5F00;
+    border-radius: 0.25rem;
+}
+
+.form .card button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.form .card button:hover {
+    background-color: #DC5F00;
+}
