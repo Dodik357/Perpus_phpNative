@@ -1,4 +1,12 @@
 <?php
+
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit();
+}
+
 include 'koneksi.php';
 include 'layout/navbar.html';
 
@@ -29,8 +37,10 @@ $result = mysqli_query($conn, $sql);
                 <div class="body-content mt-5">
                     <div class="row justify-content-center">
                         <div class="col-md-6 mt-5">
-                            <h1 class="text-center animate__animated animate__fadeInDown">Selamat Datang Perpustakaan</h1>
-                            <p class="text-center animate__animated animate__fadeInUp">Temukan buku yang Anda cari di sini</p>
+                            <h1 class="text-center animate__animated animate__fadeInDown">Selamat Datang Perpustakaan
+                            </h1>
+                            <p class="text-center animate__animated animate__fadeInUp">Temukan buku yang Anda cari di
+                                sini</p>
                             <div class="d-flex justify-content-center mt-5">
                                 <a href="buku.php" class="btn btn-primary btn-lg">Cari Buku</a>
                             </div>
